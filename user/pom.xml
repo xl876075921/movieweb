@@ -97,6 +97,13 @@
             <artifactId>shiro-all</artifactId>
             <version>1.5.3</version>
         </dependency>
+
+        <!--阿里云数据池-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.16</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
