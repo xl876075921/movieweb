@@ -6,6 +6,7 @@ import com.example.common.Const;
 import com.example.pojo.UserInfo;
 import com.example.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -39,5 +40,12 @@ public class UserController {
     public Integer register(UserInfo user){
         Integer register = userService.register(user);
         return register;
+    }
+    //校验的方法
+    @RequestMapping("cheak")
+    public String cheak(@RequestBody UserInfo user){
+        System.out.println("访问了cheak方法");
+        String msg = userService.cheak(user);
+        return msg;
     }
 }

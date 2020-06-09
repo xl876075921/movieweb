@@ -165,4 +165,29 @@
       updatetime = #{updatetime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <!--搜寻手机号-->
+  <select id="cheak">
+    select count
+    <trim prefix="(" suffix=")">
+    <if test="name != null">
+      name
+    </if>
+    <if test="phone != null">
+      phone
+    </if>
+      <if test="email != null">
+        phone
+      </if>
+    </trim>
+    from userinfo where
+    <if test="name != null">
+      name = #{name}
+    </if>
+    <if test="phone != null">
+      phone = #{phone}
+    </if>
+    <if test="email != null">
+      email = #{email}
+    </if>
+  </select>
 </mapper>

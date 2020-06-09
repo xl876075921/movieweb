@@ -25,6 +25,23 @@ public class UserInfo {
 
     private Date updatetime;
 
+    @Override
+    public String toString() {
+        return "UserInfo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", role=" + role +
+                ", sex='" + sex + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                ", age=" + age +
+                ", image='" + image + '\'' +
+                ", createtime=" + createtime +
+                ", updatetime=" + updatetime +
+                '}';
+    }
+
     public UserInfo(Integer id, String name, String password, Integer role, String sex, String phone, String email, Integer age, String image, Date createtime, Date updatetime) {
         this.id = id;
         this.name = name;
