@@ -1,5 +1,7 @@
 package com.example.service;
 
+import com.example.pojo.UserInfo;
+
 /**
  * @BelongsProject: movieweb
  * @BelongsPackage: com.wn.Service
@@ -8,4 +10,5 @@ package com.example.service;
  * @Description:
  */
 public interface IUserService {
+    UserInfo login(UserInfo userInfo);
 }

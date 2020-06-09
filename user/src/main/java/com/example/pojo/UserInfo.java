@@ -7,6 +7,8 @@ public class UserInfo {
 
     private String name;
 
+    private String password;
+
     private Integer role;
 
     private String sex;
@@ -23,15 +25,10 @@ public class UserInfo {
 
     private Date updatetime;
 
-    public UserInfo(Integer id, String name, Integer role) {
+    public UserInfo(Integer id, String name, String password, Integer role, String sex, String phone, String email, Integer age, String image, Date createtime, Date updatetime) {
         this.id = id;
         this.name = name;
-        this.role = role;
-    }
-
-    public UserInfo(Integer id, String name, Integer role, String sex, String phone, String email, Integer age, String image, Date createtime, Date updatetime) {
-        this.id = id;
-        this.name = name;
+        this.password = password;
         this.role = role;
         this.sex = sex;
         this.phone = phone;
@@ -60,6 +57,14 @@ public class UserInfo {
 
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password == null ? null : password.trim();
     }
 
     public Integer getRole() {
