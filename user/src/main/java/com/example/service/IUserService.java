@@ -11,4 +11,5 @@ import com.example.pojo.UserInfo;
  */
 public interface IUserService {
     UserInfo login(UserInfo userInfo);
+    Integer register(UserInfo userInfo);
 }
