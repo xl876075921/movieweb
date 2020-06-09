@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * CCCCCCCCCCCCCCC
+ * CCCCCCCCCCCCCC
  */
 @SpringBootApplication
 public class UserApplication {
