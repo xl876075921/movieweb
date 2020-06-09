@@ -45,5 +45,7 @@
             </plugin>
         </plugins>
     </build>
-
+    <modules>
+        <module>user</module>
+    </modules>
 </project>

@@ -33,4 +33,11 @@ public class UserController {
             return null;
         }
     }
+
+    //注册的方法
+    @RequestMapping("register")
+    public Integer register(UserInfo user){
+        Integer register = userService.register(user);
+        return register;
+    }
 }

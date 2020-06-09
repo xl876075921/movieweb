@@ -24,4 +24,9 @@ public class UserServiceImpl implements IUserService {
         UserInfo login = userMapper.login(user);
         return login;
     }
+    //注册的方法
+    public Integer register(UserInfo user){
+        int insert = userMapper.insert(user);
+        return insert;
+    }
 }
