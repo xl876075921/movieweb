@@ -3,3 +3,27 @@ mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     mapUnderscoreToCamelCase: true
+logging:
+  level:
+    com:
+      example:
+        user:
+          dao: debug
+feign:
+  hystrix:
+    enabled: false
+spring:
+  application:
+    name: user
+  datasource:
+    url: jdbc:mysql://101.201.147.153:3306/movieweb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true
+server:
+  port: 4040

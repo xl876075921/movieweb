@@ -148,7 +148,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <select id="login" resultType="com.wn.pojo.User">
+  <select id="login" resultType="com.example.pojo.UserInfo">
     select id,name,role from mmall_user where name=#{name} and password=#{password}
   </select>
   <update id="updateByPrimaryKey" parameterType="com.example.pojo.UserInfo" >

@@ -39,6 +39,12 @@ public class UserInfo {
         this.updatetime = updatetime;
     }
 
+    public UserInfo(Integer id, String name, Integer role) {
+        this.id = id;
+        this.name = name;
+        this.role = role;
+    }
+
     public UserInfo() {
         super();
     }
