@@ -27,7 +27,7 @@ public class PhoneMsgServiceImpl implements PhoneMsgService {
     @Autowired
     RedisServiceImpl redisService;
     public void sendPhoneMsg(String phoneNum){
-        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4G5ARBkd9j8nV1BZv23V", "gOK4GoDI1yeDxZjpuf8I5DGhkAQqya");
+        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "zzzzzzzzzzzzzz", "gOK4GoDI1yeDxZjpuf8I5DGhkAQqya");
         IAcsClient client = new DefaultAcsClient(profile);
 
         CommonRequest request = new CommonRequest();
